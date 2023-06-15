@@ -1,5 +1,5 @@
 <?php
-require_once "../conexaoBanco/validador_acesso.php"
+require_once "../../conexaoBanco/validador_acesso.php"
     ?>
 
 <!doctype html>
@@ -17,18 +17,17 @@ require_once "../conexaoBanco/validador_acesso.php"
 </head>
 
 <body style="justify-content: center; align-items: center; height: 100vh ">
-<?php include  "../componentes/menu.php" ?>
+    <?php include "../../componentes/menu.php" ?>
 
 
-<div class="container-fluid " style="height: 90%;">
-    <div class="row h-100">
-    <?php include("../componentes/menu.php") ?>
-    <div class="col-md-10  p-4">
-        <div class="row align-items-center mb-4">
+    <div class="container-fluid " style="height: 90%;">
+        <div class="row h-100">
+            <div class="col-md-10  p-4">
+                <div class="row align-items-center mb-4">
+                </div>
+            </div>
         </div>
     </div>
-    </div>
-</div>
 
 
     <script src="../../Bootstrap5.3.0/js/bootstrap.bundle.min.js"></script>

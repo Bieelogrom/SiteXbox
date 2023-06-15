@@ -1,6 +1,6 @@
 <?php
 
-include('../../Usuario/conexaoBanco/conexao.php');
+include('../../conexaoBanco/conexao.php');
 
 $querySelect = "SELECT * FROM tbusuarios";
 
@@ -26,12 +26,12 @@ $contatos = $resultado->fetchAll();
 
 <body style="justify-content: center; align-items: center; height: 100vh ">
 
-  <?php include("../componentes/cabecalho.php") ?>
+  <?php include("../../componentes/cabecalho.php") ?>
   <!-- cabeçalho -->
   <div class="container-fluid " style="height: 90%;">
     <div class="row h-100">
       <!-- depoimento -->
-      <?php include("../componentes/menu.php") ?>
+      <?php include("../../componentes/menu.php") ?>
       <div class="col-md-10  p-4">
         <div class="row align-items-center mb-4">
           <div class="col fs-3 fw-semibold">

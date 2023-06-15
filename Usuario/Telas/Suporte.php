@@ -13,7 +13,7 @@
 
 <body class="midnight-city">
   <header>
-    <?php include "../Componentes/barradeNav.php" ?>
+    <?php include "../../componentes/barradeNav.php" ?>
   </header>
 
   <main>
@@ -79,7 +79,7 @@
 
 
   <footer>
-    <?php include "../Componentes/footer.php" ?>
+    <?php include "../../componentes/footer.php" ?>
   </footer>
 
 

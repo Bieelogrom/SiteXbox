@@ -41,7 +41,7 @@
               <?php
             }
             ?>
-            <form method="post" action="../conexaoBanco/valida_login.php">
+            <form method="post" action="../../conexaoBanco/valida_login.php">
               <div class="form-group">
                 <input type="email" name="email" class="form-control" placeholder="E-mail">
               </div>

@@ -13,13 +13,13 @@
 
 <body class="midnight-city">
   <header>
-    <?php include "../Componentes/barradeNav.php" ?>
+    <?php include "../../componentes/barradeNav.php" ?>
   </header>
 
   <main>
     <section>
-      <div id="carouselExampleIndicators" class="carousel slide" > 
-        <div class="carousel-indicators" >
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
@@ -53,7 +53,7 @@
   </main>
 
   <footer>
-    <?php include "../Componentes/footer.php" ?>
+    <?php include "../../componentes/footer.php" ?>
   </footer>
 
 

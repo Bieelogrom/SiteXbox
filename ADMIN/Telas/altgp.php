@@ -1,7 +1,7 @@
 <?php
-require_once "../conexaoBanco/validador_acesso.php";
 
-include('../../Usuario/conexaoBanco/conexao.php');
+
+include('../../conexaoBanco/conexao.php');
 
 $querySelect = "SELECT * FROM tbgamepass";
 
@@ -27,20 +27,20 @@ $contatos = $resultado->fetchAll();
 
 <body style="justify-content: center; align-items: center; height: 100vh ">
 
-    <?php include("../componentes/cabecalho.php") ?>
+    <?php include("../../componentes/cabecalho.php") ?>
     <!-- cabeçalho -->
     <div class="container-fluid " style="height: 90%;">
         <div class="row h-100">
             <!-- depoimento -->
-            <?php include("../componentes/menu.php") ?>
+            <?php include("../../componentes/menu.php") ?>
             <div class="col-md-10  p-4">
                 <div class="row align-items-center mb-4">
                     <div class="col fs-3 fw-semibold">
                         Catálogo Gamepass
                     </div>
                     <div class="col text-end ">
-                        <a class="btn btn-success px-3" role="button" aria-disabled="true" href="AlterarGPASS/registro.php"><i
-                                class="fas fa-plus" aria-hidden="true"></i></a>
+                        <a class="btn btn-success px-3" role="button" aria-disabled="true"
+                            href="GamePass/registro.php"><i class="fas fa-plus" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class=" row">
@@ -51,6 +51,7 @@ $contatos = $resultado->fetchAll();
                                 <th class="col-md-2">Nome do Jogo</th>
                                 <th class="col-md-2">Gênero do jogo</th>
                                 <th class="col-md-3">Descrição do jogo</th>
+                                <th class="col-md-2">Capa</th>
                                 <th class="text-center col-md-1">Alterar</th>
                                 <th class="text-center col-md-1">Excluir</th>
                             </tr>
@@ -70,13 +71,11 @@ $contatos = $resultado->fetchAll();
                                     <td>
                                         <?= $contato[3] ?>
                                     </td>
-                                    <td>
-                                        <?= $contato[4] ?>
+                                    <td class="text-center">
+
                                     </td>
                                     <td class="text-center">
                                         <i class="fas fa-edit fa-lg text-secondary"></i>
-
-
                                     </td>
                                     <td class="text-center">
                                         <i class="fas fa-trash-alt fa-lg text-danger"></i>
@@ -99,7 +98,7 @@ $contatos = $resultado->fetchAll();
                 </div>
                 <div class="modal-body  ">
                     <form action="remover.php" method="post">
-                        <input class="form-control" id="id_depoimentoUp" name="id_depoimentoUp" type="hidden">
+                        <input class="form-control" id="id_depoimentoUp" name="id_depoimentoUp" type="text">
                         <p>Tem certeza que deseja excluir o item selcionado?
                         <div class=" text-end">
                             <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Não</button>
